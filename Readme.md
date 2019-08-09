@@ -15,7 +15,8 @@ Follow the following procedure to get these templates included in your Goland:
 
 This video shows a screen recording of the above process: 
 
-https://www.youtube.com/watch?v=dRkObJ4vooM&feature=youtu.be
+
+[![alt text](Screenshot.png)](https://www.youtube.com/watch?v=dRkObJ4vooM&feature=youtu.be)
 
 
 Of course there is another way of getting the same result and ths is by adding the official plugin. But this repository shows how to do your own customization if you don't want to wait for these to be available in the official Goland templates. 
