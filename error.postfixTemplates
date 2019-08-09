@@ -1,0 +1,17 @@
+## error checks and other error related operations ##
+
+.checkFatal : error check fatal
+	ERROR      → if $expr$ != nil {\
+                    log.Fatal().Err($expr$).Msg("$end$")\
+                    return $expr$\
+                 }\
+
+.checkErr : error check
+	ERROR      → if $expr$ != nil {\
+                    log.Error().Err($expr$).Msg("$end$")\
+                 }\
+
+.returnWrap : return wrapped error
+	ERROR      → if $expr$ != nil {\
+                    return errors.Wrap($expr$, "$end$")\
+                 }\

@@ -1,0 +1,15 @@
+## grpc operations ##
+
+.grpcStreamReceive : receive grpc stream 
+    ANY    →   for {\
+                    resp, err := $expr$.Recv()\
+                    if err == io.EOF {\
+                        break\
+                    }\
+                    \
+                    if err != nil {\
+                        log.Error().Err(err).Msg("error receiving destination vertices")\
+                        return\
+                    }\
+                    $VAR0$
+                }\
